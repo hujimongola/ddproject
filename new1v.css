@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    scroll-behavior: smooth;
+    background-color: black;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styling */
+ul {
+    list-style-type: none;
+    border: solid #000000 15px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 300px;
+    font-size: 1.5rem; /* Relative units for responsiveness */
+    color: chartreuse;
+    display: flex;
+    justify-content: space-around; /* Ensure items are spaced properly */
+    gap: 10px;
+}
+
+li a:link, li a:visited {
+    color: rgb(0, 234, 255);
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: rgb(255, 0, 51);
+}
+
+/* Center aligned images */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Text styling */
+.ad {
+    text-align: center;
+    font-size: 3rem;
+    color: snow;
+}
+
+.ao {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: snow;
+}
+
+.ol {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: snow;
+    padding: 0 1rem;
+}
+
+.im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.im2 {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.gs {
+    text-align: center;
+    color: cyan;
+    font-size: 2rem;
+    margin: 5vh 0;
+}
+
+.ima { 
+    font-size: 1.25rem;
+    color: snow;
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.fa, .fa2 {
+    text-align: center;
+    color: cyan;
+    font-size: 2rem;
+    margin: 5vh 0;
+}
+
+.sol, .sol2 {
+    font-size: 1.25rem;
+    color: snow;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+.imgw {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.imgw img {
+    width: 30%;
+    max-width: 100px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    ul {
+        width: 90%;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .ao {
+        font-size: 2rem;
+    }
+
+    .ol {
+        font-size: 1rem;
+    }
+
+    .im2 {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .ima {
+        font-size: 1rem;
+    }
+
+    .gs, .fa, .fa2 {
+        font-size: 1.5rem;
+    }
+
+    .sol, .sol2 {
+        font-size: 1rem;
+    }
+
+    .imgw {
+        gap: 0.5rem;
+    }
+
+    .imgw img {
+        width: 40%;
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .ao {
+        font-size: 1.5rem;
+    }
+
+    .ol {
+        font-size: 0.8rem;
+    }
+
+    .im2 {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .ima {
+        font-size: 0.9rem;
+    }
+
+    .gs, .fa, .fa2 {
+        font-size: 1.2rem;
+    }
+
+    .sol, .sol2 {
+        font-size: 0.9rem;
+    }
+
+    .imgw {
+        gap: 0.5rem;
+    }
+
+    .imgw img {
+        width: 50%;
+        max-width: 70px;
+    }
+}
